@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "releasepipelinedecoratorprepost",
+    "name": "Example Release Pipeline Decorator PREPOST",
+    "version": "1.0.0",
+    "publisher": "YOUR_PUBLISHER_HERE",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "This is the example of a Decorator which works with Classic Release pipelines, and execute both BEFORE and AFTER any other task",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-release-pipelines-agent-job.pre-job-tasks",
+                "ms.azure-release-pipelines-agent-job.post-job-tasks"
+            ],
+            "properties": {
+                "template": "custom-prepostjob-decorator.yml"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "custom-prepostjob-decorator.yml",
+            "addressable": true,
+            "contentType": "text/plain"
+        }
+    ]
+}
