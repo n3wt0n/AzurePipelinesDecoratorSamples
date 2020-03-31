@@ -4,3 +4,5 @@
 
 
 A series of sample Decorators for Azure Pipelines (Build and Release)
+
+Decorators in this repo work with both Azure DevOps and Azure DevOps Server.
