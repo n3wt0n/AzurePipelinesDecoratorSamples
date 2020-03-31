@@ -18,7 +18,6 @@
             "id": "my-required-task",
             "type": "ms.azure-pipelines.pipeline-decorator",
             "targets": [
-                "ms.azure-pipelines-agent-job.post-job-tasks",
                 "ms.azure-pipelines-agent-job.post-job-tasks"
             ],
             "properties": {
