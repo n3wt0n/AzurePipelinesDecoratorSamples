@@ -9,15 +9,17 @@ Decorators in this repo work with both Azure DevOps and Azure DevOps Server.
 
 ## About this repo structure
 
-There are 2 types of Decorators in this repo:
+There are 2 types of Basic Decorators in this repo:
 
 - __Build__: The Decorators in this folder work with ___both___ the Classic Build pipelines and the Multistage (_YAML_) pipelines.
 - __Release__: The Decorators in this folder work ___only___ with the Classic Release pipelines.
 
-In each folder, there are thre other folders:
+In each of the previous folder, there are three other folders:
 - __Pre__: this decorators run ___before___ any other task in the pipeline
 - __Post__: this decorators run ___after___ any other task in the pipeline
 - __PrePost__: this decorators run ___both before and after___ any other task in the pipeline
+
+The __Advanced__ folder instead contains some different examples of slightly more advanced decorators, with specific implementations.
 
 ## Getting Started
 
