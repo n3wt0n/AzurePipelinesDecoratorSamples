@@ -18,3 +18,7 @@ Where:
   - _Post_: this decorators run after any other task in the pipeline
   - _PrePost_: this decorators run before and after any other task in the pipeline 
 - __TASK__: the actual operation(s) that the decorator performs
+
+### Decorator-specific information
+
+Check the README in each Decorator folder to know more about what each Decorator does.
