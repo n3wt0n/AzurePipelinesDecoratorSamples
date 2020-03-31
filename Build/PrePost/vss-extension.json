@@ -3,7 +3,7 @@
     "id": "pipelinedecoratorprepost",
     "name": "Example Pipeline Decorator PREPOST",
     "version": "1.0.0",
-    "publisher": "DB",
+    "publisher": "YOUR_PUBLISHER_HERE",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
