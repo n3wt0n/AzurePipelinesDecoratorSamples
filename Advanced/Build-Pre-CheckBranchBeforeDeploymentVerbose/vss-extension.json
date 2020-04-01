@@ -1,0 +1,35 @@
+{
+    "manifestVersion": 1,
+    "id": "sourcebranchcheckerondeploymentverbose",
+    "name": "Source Branch name checked for Deployments - Verbose version",
+    "version": "1.0.0",
+    "publisher": "YOUR_PUBLISHER_HERE",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "An Azure Pipelines decorator, for Deployment Jobs, to check the name of the source branch when deploying to Production and fail the deployment if the source branch is different from master.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-job-tasks"
+            ],
+            "properties": {
+                "template": "check-for-branch-name-verbose.yml"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "check-for-branch-name-verbose.yml",
+            "addressable": true,
+            "contentType": "text/plain"
+        }
+    ]
+}
