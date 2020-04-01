@@ -1,0 +1,8 @@
+steps:
+- ${{ if and(ne(variables['Build.SourceBranchName'], 'master'), or(contains(variables['System.StageDisplayName'],'PRD'),contains(variables['System.StageDisplayName'],'Prod')) ) }}:
+  - task: CmdLine@2
+    displayName: 'Branch Name Checker (Injected)'
+    inputs:
+      script: |
+        echo "##vso[task.logissue type=error]The Source branch is '$(Build.SourceBranchName)' instead of 'master'. You cannot deploy to PRODUCTION from this branch."
+        exit 1
