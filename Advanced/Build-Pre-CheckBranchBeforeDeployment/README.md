@@ -16,3 +16,9 @@ Allow the deployment in Production only if the sources are coming from the _mast
 4. 
    - Continue the deployment if the source branch is _master_
    - Fail the deployment if the source branch is anything else
+
+#### Result
+The task is executed ONLY when the job is a deployment job, the stage contains "prd" or "prod", and the branch is not "master".
+It makes the deployment fail:
+
+![Pipeline Result](https://github.com/n3wt0n/AzurePipelinesDecoratorSamples/raw/master/Advanced/Build-Pre-CheckBranchBeforeDeployment/PipelineResult.png)
