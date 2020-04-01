@@ -1,0 +1,18 @@
+steps:
+- task: PowerShell@2
+  displayName: 'Branch Name Checker (Injected)'
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "Stage Name: $(System.StageName)"
+      Write-Host "Branch Name: $(Build.SourceBranchName)"
+      
+      If (('$(System.StageName)' -like '*prd*' -or '$(System.StageName)' -like '*prod*') -and '$(Build.SourceBranchName)' -ne 'master')
+      {
+        Write-Host "##vso[task.logissue type=error]The Source branch is '$(Build.SourceBranchName)' instead of 'master'. You cannot deploy to PRODUCTION from this branch."
+        exit 1
+      }
+      else
+      {
+        Write-Host "Everything good."
+      }
