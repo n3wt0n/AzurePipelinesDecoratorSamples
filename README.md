@@ -24,7 +24,7 @@ The __Advanced__ folder instead contains some different examples of slightly mor
 
 ## Getting Started
 
-To keep things simple, each folder is a standalone decorator extension. 
+To keep things simple, each folder contains a standalone decorator extension. 
 
 Pick the one you want to use and follow the steps below.
 
