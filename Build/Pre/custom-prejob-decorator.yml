@@ -2,4 +2,4 @@ steps:
 - task: CmdLine@2
   displayName: 'Decorator-injected Task'
   inputs:
-    script: echo This is from the Decorator
+    script: echo This is from the Decorator for Build

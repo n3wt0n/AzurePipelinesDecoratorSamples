@@ -12,7 +12,8 @@ Check the official documentation [here](https://docs.microsoft.com/en-us/azure/d
 
 There are 2 types of Basic Decorators in this repo:
 
-- __Build__: The Decorators in this folder work with ___both___ the Classic Build pipelines and the Multistage (_YAML_) pipelines.
+- __Build__: The Decorators in this folder work with ___both___ the Classic Build pipelines and the Multistage (_YAML_) pipelines. 
+  - When running in YAML pipelines, they are applied to ___both___ __Jobs__ and __Deployment Jobs__
 - __Release__: The Decorators in this folder work ___only___ with the Classic Release pipelines.
 
 In each of the previous folder, there are three other folders:
