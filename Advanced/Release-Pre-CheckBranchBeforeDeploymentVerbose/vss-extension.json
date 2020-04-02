@@ -18,16 +18,16 @@
             "id": "my-required-task",
             "type": "ms.azure-pipelines.pipeline-decorator",
             "targets": [
-                "ms.azure-pipelines-agent-job.pre-job-tasks"
+                "ms.azure-release-pipelines-agent-job.pre-job-tasks"
             ],
             "properties": {
-                "template": "check-for-branch-name-verbose.yml"
+                "template": "check-for-branch-name-release-verbose.yml"
             }
         }
     ],
     "files": [
         {
-            "path": "check-for-branch-name-verbose.yml",
+            "path": "check-for-branch-name-release-verbose.yml",
             "addressable": true,
             "contentType": "text/plain"
         }
