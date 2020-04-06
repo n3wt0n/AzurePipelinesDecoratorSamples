@@ -1,0 +1,6 @@
+steps:
+- ${{ if eq(resources.repositories['self'].name, 'Git') }}:
+  - task: CmdLine@2
+    displayName: 'Tag Sources (Injected)'
+    inputs:
+      script: git tag -a -m "Tagged from Azure Pipelines Decorator, with Build ID $(Build.BuildId)" $(Build.BuildId) $(Build.SourceVersion)

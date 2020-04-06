@@ -1,0 +1,35 @@
+{
+    "manifestVersion": 1,
+    "id": "tagsources",
+    "name": "Tag Sources with BuildId after Build",
+    "version": "1.0.0",
+    "publisher": "YOUR_PUBLISHER_HERE",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "An Azure Pipelines decorator to Tag the sources with the BuildId",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "contributions": [
+        {
+            "id": "my-required-task",
+            "type": "ms.azure-pipelines.pipeline-decorator",
+            "targets": [
+                "ms.azure-pipelines-agent-job.pre-job-tasks"
+            ],
+            "properties": {
+                "template": "tag-sources.yml"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "tag-sources.yml",
+            "addressable": true,
+            "contentType": "text/plain"
+        }
+    ]
+}
