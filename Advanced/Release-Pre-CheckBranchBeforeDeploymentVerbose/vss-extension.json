@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "sourcebranchcheckerondeploymentverbose",
-    "name": "Source Branch name checked for Deployments - Verbose version",
+    "name": "Source Branch name checker for Deployments - Verbose version",
     "version": "1.0.0",
     "publisher": "YOUR_PUBLISHER_HERE",
     "targets": [

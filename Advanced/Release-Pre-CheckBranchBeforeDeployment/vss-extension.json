@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "sourcebranchcheckerondeploymentrelease",
-    "name": "Source Branch name checked for Deployments - Classic Release version",
+    "name": "Source Branch name checker for Deployments - Classic Release version",
     "version": "1.0.0",
     "publisher": "YOUR_PUBLISHER_HERE",
     "targets": [
