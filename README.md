@@ -30,7 +30,7 @@ To keep things simple, each folder contains a standalone decorator extension.
 
 Pick the one you want to use and follow the steps below.
 
-For basic prerequisites take a look [here](https://docs.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops#prerequisites)
+For __prerequisites__ take a look [here](https://docs.microsoft.com/en-us/azure/devops/extend/get-started/node?view=azure-devops#prerequisites)
 
 ### Build and Package the extension
 
