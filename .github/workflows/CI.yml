@@ -18,7 +18,18 @@ jobs:
     
     strategy:
       matrix:
-        package_json_path: ["Advanced/Build-Pre-CheckBranchBeforeDeployment/package.json", "Advanced/Build-Post-TagSourcesWithBuildId/package.json"]
+        package_json_path: 
+        - "Advanced/Build-Post-TagSourcesWithBuildId/package.json"
+        - "Advanced/Build-Pre-CheckBranchBeforeDeployment/package.json"
+        - "Advanced/Build-Pre-CheckBranchBeforeDeploymentVerbose/package.json"
+        - "Advanced/Release-Pre-CheckBranchBeforeDeployment/package.json"
+        - "Advanced/Release-Pre-CheckBranchBeforeDeploymentVerbose/package.json"
+        - "Build/Pre/package.json"
+        - "Build/Post/package.json"
+        - "Build/PrePost/package.json"     
+        - "Release/Pre/package.json"
+        - "Release/Post/package.json"
+        - "Release/PrePost/package.json"
         
     steps:
       - uses: actions/checkout@v2
@@ -29,12 +40,4 @@ jobs:
       - name: Validate package.json
         run: pjv -f ${{ matrix.package_json_path }}
     
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
 
