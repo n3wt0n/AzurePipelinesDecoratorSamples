@@ -23,5 +23,5 @@ jobs:
     - uses: actions/checkout@v2
 
     # Validates all the YAML files in the repo
-    - name: YAML Lint
-      uses: ibiqlik/action-yamllint@v1.0.0
+    - name: Yaml-Checker
+      uses: leon-th/yaml-checker@v1.0.0
