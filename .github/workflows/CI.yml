@@ -38,6 +38,14 @@ jobs:
         run: sudo npm install package-json-validator -g
     
       - name: Validate package.json
-        run: pjv -f "${{ format('{0}{1}', matrix.project_path, 'project.json') }}"
+        run: pjv -f "${{ format('{0}{1}', matrix.project_path, 'package.json') }}"
+      
+      - name: Install TFX CLI
+        run: sudo npm install tfx-cli -g
+      
+      - name: Generate the extension
+        run: |
+          cd ${{ matrix.project_path }}
+          tfx extension create
     
 
