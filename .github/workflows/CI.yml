@@ -38,6 +38,6 @@ jobs:
         run: sudo npm install package-json-validator -g
     
       - name: Validate package.json
-        run: pjv -f "${{ format('${{ matrix.project_path }}', 'project.json') }}"
+        run: pjv -f "${{ format('{0}{1}', matrix.project_path, 'project.json') }}"
     
 
