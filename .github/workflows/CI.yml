@@ -16,6 +16,10 @@ jobs:
   validation:
     runs-on: ubuntu-latest
     
+    strategy:
+      matrix:
+        package_json_path: ["Advanced/Build-Pre-CheckBranchBeforeDeployment/package.json", "Advanced/Build-Post-TagSourcesWithBuildId/package.json"]
+        
     steps:
       - uses: actions/checkout@v2
       
@@ -23,7 +27,7 @@ jobs:
         run: sudo npm install package-json-validator -g
     
       - name: Validate package.json
-        run: pjv -f "/Advanced/Build-Pre-CheckBranchBeforeDeployment/package.json"
+        run: pjv -f ${{ matrix.package_json_path }}
     
   build:
     # The type of runner that the job will run on
