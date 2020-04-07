@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Install package.json validator
-        run: npm install package-json-validator
+        run: sudo npm install package-json-validator -g
     
       - name: Validate package.json
         run: pjv -f "/Advanced/Build-Pre-CheckBranchBeforeDeployment/package.json"
