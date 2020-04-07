@@ -18,18 +18,18 @@ jobs:
     
     strategy:
       matrix:
-        package_json_path: 
-        - "Advanced/Build-Post-TagSourcesWithBuildId/package.json"
-        - "Advanced/Build-Pre-CheckBranchBeforeDeployment/package.json"
-        - "Advanced/Build-Pre-CheckBranchBeforeDeploymentVerbose/package.json"
-        - "Advanced/Release-Pre-CheckBranchBeforeDeployment/package.json"
-        - "Advanced/Release-Pre-CheckBranchBeforeDeploymentVerbose/package.json"
-        - "Build/Pre/package.json"
-        - "Build/Post/package.json"
-        - "Build/PrePost/package.json"     
-        - "Release/Pre/package.json"
-        - "Release/Post/package.json"
-        - "Release/PrePost/package.json"
+        project_path: 
+        - "Advanced/Build-Post-TagSourcesWithBuildId/"
+        - "Advanced/Build-Pre-CheckBranchBeforeDeployment/"
+        - "Advanced/Build-Pre-CheckBranchBeforeDeploymentVerbose/"
+        - "Advanced/Release-Pre-CheckBranchBeforeDeployment/"
+        - "Advanced/Release-Pre-CheckBranchBeforeDeploymentVerbose/"
+        - "Build/Pre/"
+        - "Build/Post/"
+        - "Build/PrePost/"     
+        - "Release/Pre/"
+        - "Release/Post/"
+        - "Release/PrePost/"
         
     steps:
       - uses: actions/checkout@v2
@@ -38,6 +38,6 @@ jobs:
         run: sudo npm install package-json-validator -g
     
       - name: Validate package.json
-        run: pjv -f ${{ matrix.package_json_path }}
+        run: pjv -f format('${{ matrix.project_path }}', 'project.json')
     
 
