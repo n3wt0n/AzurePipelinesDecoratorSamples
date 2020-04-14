@@ -10,6 +10,14 @@ Decorators in this repo work only with Azure DevOps (_they are not available in 
 
 Check the official documentation [here](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator) and [here](https://docs.microsoft.com/en-us/azure/devops/extend/develop/pipeline-decorator-context) for more information about Azure Pipelines decorators.
 
+## Intro to Decorators
+
+If you want to have a step-by-step guide on how Decorators work and how to structure them, check out my video:
+
+[![Pipelines Decorators on CoderDave](https://img.youtube.com/vi/1l-UAjdrSsM/0.jpg)](https://www.youtube.com/watch?v=1l-UAjdrSsM)
+
+In the video I actually reference this repo and its content.
+
 ## About this repo structure
 
 There are 2 types of Basic Decorators in this repo:
