@@ -12,6 +12,8 @@ Check the official documentation [here](https://docs.microsoft.com/en-us/azure/d
 
 ## Intro to Decorators
 
+I explain more about Pipelines Decorator in [my blog post here](https://dev.to/n3wt0n/azure-pipelines-decorators-all-you-need-to-know-72a)
+
 If you want to have a step-by-step guide on how Decorators work and how to structure them, check out my video:
 
 [![Pipelines Decorators on CoderDave](https://img.youtube.com/vi/1l-UAjdrSsM/0.jpg)](https://www.youtube.com/watch?v=1l-UAjdrSsM)
