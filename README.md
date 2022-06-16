@@ -54,7 +54,7 @@ npm install
 Then you need to actually create the extension:
 
 ```cmd
-tfx extension create
+tfx extension create --manifest-globs vss-extension.json
 ```
 
 This will generate the _.vsix_ package file
